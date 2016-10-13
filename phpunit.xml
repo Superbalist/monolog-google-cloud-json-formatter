@@ -5,8 +5,6 @@
          convertErrorsToExceptions="true"
          convertNoticesToExceptions="true"
          convertWarningsToExceptions="true"
-         printerFile="tests/infrastructure/PHPUnit/ResultPrinter.php"
-         printerClass="Tests\Infrastructure\PHPUnit\ResultPrinter"
          processIsolation="false"
          stopOnFailure="false">
     <testsuites>
