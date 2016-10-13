@@ -1,28 +1,33 @@
 {
-	"name": "superbalist/monolog-google-cloud-json-formatter",
-	"description": "A Monolog extension for formatting log entries for Google Cloud Logging",
-	"license": "MIT",
-	"authors": [
-		{
-			"name": "Superbalist.com a division of Takealot Online (Pty) Ltd",
-			"email": "info@superbalist.com"
-		}
-	],
-	"require": {
-		"php": ">=5.4.0",
-		"monolog/monolog": "~1.0"
-	},
-	"autoload": {
-		"psr-4": {
-			"Superbalist\\Monolog\\Formatter\\": "src/"
-		}
-	},
-	"config": {
-		"bin-dir": "bin"
-	},
-	"extra": {
-		"branch-alias": {
-			"dev-master": "1.0-dev"
-		}
-	}
+    "name": "superbalist/monolog-google-cloud-json-formatter",
+    "description": "A Monolog extension for formatting log entries for Google Cloud Logging",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Superbalist.com a division of Takealot Online (Pty) Ltd",
+            "email": "info@superbalist.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "monolog/monolog": "~1.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~5.0",
+        "whatthejeff/nyancat-phpunit-resultprinter": "~1.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Superbalist\\Monolog\\Formatter\\": "src/",
+            "Tests\\Infrastructure\\": "tests/infrastructure"
+        }
+    },
+    "config": {
+        "bin-dir": "bin"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    }
 }
