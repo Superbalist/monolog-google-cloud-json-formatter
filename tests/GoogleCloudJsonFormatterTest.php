@@ -52,7 +52,7 @@ class GoogleCloudJsonFormatterTest extends PHPUnit_Framework_TestCase
      */
     protected function getRecord($level = Logger::WARNING, $message = 'test', $context = [], $extra = [])
     {
-        return array(
+        return [
             'message' => $message,
             'context' => $context,
             'level' => $level,
@@ -60,7 +60,7 @@ class GoogleCloudJsonFormatterTest extends PHPUnit_Framework_TestCase
             'channel' => 'test',
             'datetime' => \DateTime::createFromFormat('U.u', sprintf('%.6F', microtime(true))),
             'extra' => $extra,
-        );
+        ];
     }
 
     /**
