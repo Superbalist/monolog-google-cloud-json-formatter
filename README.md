@@ -4,7 +4,7 @@
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE)
 [![Packagist Version](https://img.shields.io/packagist/v/superbalist/monolog-google-cloud-json-formatter.svg?style=flat-square)](https://packagist.org/packages/superbalist/monolog-google-cloud-json-formatter)
 [![Total Downloads](https://img.shields.io/packagist/dt/superbalist/monolog-google-cloud-json-formatter.svg?style=flat-square)](https://packagist.org/packages/superbalist/monolog-google-cloud-json-formatter)
-
+[![Build Status](https://travis-ci.org/Superbalist/monolog-google-cloud-json-formatter.svg)](https://travis-ci.org/Superbalist/monolog-google-cloud-json-formatter)
 
 This library works in conjunction with https://github.com/GoogleCloudPlatform/fluent-plugin-google-cloud
 
