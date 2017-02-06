@@ -1,10 +1,11 @@
-<?php namespace Superbalist\Monolog\Formatter;
+<?php
+
+namespace Superbalist\Monolog\Formatter;
 
 use Monolog\Formatter\JsonFormatter;
 
 class GoogleCloudJsonFormatter extends JsonFormatter
 {
-
     /**
      * {@inheritdoc}
      */
@@ -19,6 +20,7 @@ class GoogleCloudJsonFormatter extends JsonFormatter
      * Return a JSON-encoded array of records.
      *
      * @param array $records
+     *
      * @return string
      */
     protected function formatBatchJson(array $records)
@@ -34,6 +36,7 @@ class GoogleCloudJsonFormatter extends JsonFormatter
 
     /**
      * @param array $record
+     *
      * @return array
      */
     protected function translateRecordForGoogleCloudLoggingFormat(array $record)
@@ -43,7 +46,6 @@ class GoogleCloudJsonFormatter extends JsonFormatter
 
         $dt = $record['datetime'];
         /** @var \DateTime $dt */
-
         $formatted = [
             'message' => $record['message'],
             'severity' => $record['level_name'],
@@ -51,7 +53,7 @@ class GoogleCloudJsonFormatter extends JsonFormatter
                 'seconds' => $dt->getTimestamp(),
                 'nanos' => 0,
             ],
-            'channel' => $record['channel']
+            'channel' => $record['channel'],
         ];
 
         // merge in anything else from context and extra as structured metadata
