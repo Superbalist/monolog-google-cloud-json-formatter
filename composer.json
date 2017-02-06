@@ -20,9 +20,6 @@
             "Superbalist\\Monolog\\Formatter\\": "src/"
         }
     },
-    "config": {
-        "bin-dir": "bin"
-    },
     "extra": {
         "branch-alias": {
             "dev-master": "1.0-dev"
