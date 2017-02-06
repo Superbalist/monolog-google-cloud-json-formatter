@@ -1,12 +1,11 @@
 <?php
 
-use Monolog\Logger;
 use Monolog\Handler\StreamHandler;
+use Monolog\Logger;
 use Superbalist\Monolog\Formatter\GoogleCloudJsonFormatter;
 
 class GoogleCloudLoggerTest extends PHPUnit_Framework_TestCase
 {
-
     /**
      * @var Logger
      */

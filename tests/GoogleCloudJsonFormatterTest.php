@@ -5,7 +5,6 @@ use Superbalist\Monolog\Formatter\GoogleCloudJsonFormatter;
 
 class GoogleCloudJsonFormatterTest extends PHPUnit_Framework_TestCase
 {
-
     /**
      * @test
      */
@@ -48,6 +47,7 @@ class GoogleCloudJsonFormatterTest extends PHPUnit_Framework_TestCase
      * @param string $message
      * @param array $context
      * @param array $extra
+     *
      * @return array
      */
     protected function getRecord($level = Logger::WARNING, $message = 'test', $context = [], $extra = [])
@@ -65,6 +65,7 @@ class GoogleCloudJsonFormatterTest extends PHPUnit_Framework_TestCase
 
     /**
      * @param array $record
+     *
      * @return array
      */
     protected function getFormattedRecord(array $record)
