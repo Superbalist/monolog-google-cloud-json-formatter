@@ -9,7 +9,7 @@ class GoogleCloudJsonFormatter extends JsonFormatter
     /**
      * {@inheritdoc}
      */
-    public function format(array $record)
+    public function format(array $record): string
     {
         return json_encode(
             $this->translateRecordForGoogleCloudLoggingFormat($record)
@@ -23,7 +23,7 @@ class GoogleCloudJsonFormatter extends JsonFormatter
      *
      * @return string
      */
-    protected function formatBatchJson(array $records)
+    protected function formatBatchJson(array $records): string
     {
         $records = array_map(
             function ($record) {

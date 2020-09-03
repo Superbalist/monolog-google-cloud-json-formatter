@@ -1,9 +1,10 @@
 <?php
 
 use Monolog\Logger;
+use PHPUnit\Framework\TestCase;
 use Superbalist\Monolog\Formatter\GoogleCloudJsonFormatter;
 
-class GoogleCloudJsonFormatterTest extends PHPUnit_Framework_TestCase
+class GoogleCloudJsonFormatterTest extends TestCase
 {
     /**
      * @test
